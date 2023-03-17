@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Screamer";
+    src: url("FKScreamer.ttf");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+h1{
+    font-family: 'Screamer';
+    font-size: 22vw;
+    color: #272727;
+    font-weight: 100;
+}
+emoji{
+    font-size: 7vw;
+    width: 7.6vw;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+/* INTRO SCREEN */
+.introduction{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+.intro_inner{
+    margin-bottom: 19vw;
+}
+#typer{
+    animation: 1s infinite;
+    animation-name: fadeinout;
+    padding-bottom: 2vw;
+}
+@keyframes fadeinout{
+    0% {
+        opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* CONTENT */
+.content_outer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    margin-bottom: 0vw;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10vw;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about_container{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    
+}
+.about_emojis{
+    font-size: 3vw;
+    max-width: 62vw;
+    line-height: 160%;
+}
+
+
+@page { size: auto;  margin: 0mm; }
+.print{
+    position: absolute;
+    bottom: 0;
+    bottom: 1.5vw;
+    font-size: 7vw;
+    width: 100vw;
+    text-align: center;
+}
+
